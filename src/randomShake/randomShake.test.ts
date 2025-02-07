@@ -1,4 +1,4 @@
-import { randomShake } from "../src/randomShake";
+import { randomShake } from "./randomShake";
 import { JSDOM } from "jsdom";
 
 test("randomShake modifies body transform", (done) => {

@@ -1,4 +1,4 @@
-import { disappearText, randomShake } from "./src/index.js";
+import { disappearText, randomShake } from "./dist/index.mjs";
 
 document.getElementById("disappearTextBtn").addEventListener("click", () => {
   disappearText();
