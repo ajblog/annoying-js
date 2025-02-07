@@ -8,7 +8,7 @@ Perfect for pranks, or just making the web more... unpredictable.
 ## 🚀 Features
 
 - **disappearText()** – Text disappears when hovered.
-- **randomShake()** – Makes the page shake randomly.
+- **shake()** – Make the page or selected elements shake.
 - More coming soon!
 
 ## 📦 Installation
@@ -26,13 +26,13 @@ Here’s how to start annoying people with AnnoyingJS!
 Using ES Modules:
 
 ```javascript
-import { disappearText, randomShake } from "annoyingjs";
+import { disappearText, shake } from "annoyingjs";
 
 // Make text disappear on hover
 disappearText();
 
-// Make the page randomly shake
-randomShake();
+// Make the page or selected elements shake
+shake();
 ```
 
 Using a Script Tag:
@@ -43,8 +43,8 @@ Using a Script Tag:
   // Make text disappear on hover
   annoyingjs.disappearText();
 
-  // Make the page randomly shake
-  annoyingjs.randomShake();
+  // Make the page or selected elements shake
+  annoyingjs.shake();
 </script>
 ```
 
