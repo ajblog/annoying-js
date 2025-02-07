@@ -1,16 +1,28 @@
 {
-  "name": "annoying",
+  "name": "annoying-js",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "esbuild src/index.js --bundle --format=esm --outfile=dist/index.mjs && esbuild src/index.js --bundle --format=cjs --outfile=dist/index.js",
+    "test": "jest",
+    "serve": "serve -p 3000",
+    "prepare": "npm run build"
   },
-  "keywords": [],
+  "keywords": [
+    "annoying",
+    "fun",
+    "javascript",
+    "prank"
+  ],
   "author": "",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
+  "description": "A fun JavaScript library that messes with webpages in weird ways.",
   "devDependencies": {
     "jest": "^29.7.0",
-    "jsdom": "^26.0.0"
+    "jsdom": "^26.0.0",
+    "esbuild": "^0.19.0",
+    "serve": "^14.2.4"
   }
 }
