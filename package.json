@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "build": "npm run test && tsc && esbuild dist/index.js --bundle --format=esm --outfile=dist/index.mjs && esbuild dist/index.js --bundle --format=cjs --outfile=dist/index.cjs",
+    "build": "rm -rf ./dist && npm run test && tsc && esbuild dist/index.js --bundle --format=esm --outfile=dist/index.mjs && esbuild dist/index.js --bundle --format=cjs --outfile=dist/index.cjs",
     "test": "jest",
     "serve": "npm run build && serve -p 3000",
     "prepare": "npm run build"

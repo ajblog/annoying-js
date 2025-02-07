@@ -7,24 +7,99 @@
     <script type="module" src="./script.js"></script>
     <style>
       body {
-        font-family: Arial, sans-serif;
+        font-family: "Arial", sans-serif;
         text-align: center;
-        margin-top: 50px;
+        margin: 0;
+        padding: 0;
+        background: #f8f9fa;
       }
-      button {
-        padding: 10px 20px;
+
+      .container {
+        max-width: 700px;
+        margin: 50px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .description {
         font-size: 16px;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      .feature {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f1f1f1;
+        padding: 12px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+
+      .btn {
+        padding: 10px 14px;
+        font-size: 14px;
         cursor: pointer;
-        margin: 10px;
+        border: none;
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out;
+        background: #007bff;
+        color: white;
+      }
+
+      .btn:hover {
+        background: #0056b3;
+      }
+
+      .reset-btn {
+        background: #dc3545;
+        color: white;
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        padding: 12px;
+      }
+
+      .reset-btn:hover {
+        background: #a71d2a;
       }
     </style>
   </head>
   <body>
-    <h1>AnnoyingJS Playground</h1>
-    <p>Hover over this text to see it disappear.</p>
-    <p>Try clicking the buttons below to activate different annoyances.</p>
+    <div class="container">
+      <h1>AnnoyingJS Playground</h1>
+      <p class="description">
+        A collection of chaotic, fun, and interactive JavaScript functions to
+        test.
+      </p>
 
-    <button id="disappearTextBtn">Enable Disappear Text</button>
-    <button id="randomShakeBtn">Enable Random Shake</button>
+      <div class="feature">
+        <span
+          ><strong>Disappear Text:</strong> Hover over text, and it will
+          vanish.</span
+        >
+        <button id="disappearTextBtn" class="btn">Enable</button>
+      </div>
+
+      <div class="feature">
+        <span
+          ><strong>Shake:</strong> Makes the entire page or selected elements
+          shake.</span
+        >
+        <button id="shakeBtn" class="btn">Enable</button>
+      </div>
+
+      <button id="resetBtn" class="reset-btn">Reset</button>
+    </div>
   </body>
 </html>

@@ -1,2 +1,2 @@
 export * from "./disappearText/disappearText";
-export * from "./randomShake/randomShake";
+export * from "./shake/shake";
